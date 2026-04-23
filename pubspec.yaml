@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 2.1.1+4
+version: 2.1.2+6
 
 environment:
   sdk: '>=3.3.2 <4.0.0'
@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -68,12 +67,11 @@ dependencies:
   equatable: ^2.0.5 #Equatable
   photo_view: ^0.14.0 #Image Photo Viewer
   form_validator: ^2.1.1 #Validate Form Faster
-  pdfx: ^2.5.0 #Get Pdf File from asset or internet
+  pdfx: ^2.6.0 #Get Pdf File from asset or internet
   internet_file: ^1.2.0 #Get Internet File
   image_picker: ^0.8.7+4 #Image Picker Flutter
   file_picker: ^5.2.10 #Pick Files
   dotted_decoration: ^2.0.0 #Dotted Decoration
-  flutter_native_image: ^0.0.6+1 #Native Image Flutter
   flutter_local_notifications: ^14.0.0 #Flutter Local Notification
   responsive_framework: ^1.0.0 #Responsive Framework
   navigation_utils: ^0.1.0 #Navigation utils for applying Navigation 2 in Flutter
@@ -86,8 +84,6 @@ dependencies:
 
   flutter_native_splash:
     path: ../shared_plugins/flutter_native_splash
-  pdf_render:
-    path: ../shared_plugins/pdf_render
 
 dev_dependencies:
   flutter_test:

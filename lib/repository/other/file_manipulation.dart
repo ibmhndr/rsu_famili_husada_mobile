@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_image/flutter_native_image.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:rsufamilyhusadacare_mobile/view_component/view_component.dart';
 
@@ -37,36 +36,36 @@ class FileManipulation {
     }
   }
 
-  //compress Photo file and get file.
-  Future<File> compressAndGetFile(
-      String targetPath, List<File> dataFotoDelete) async {
-    File photo = await FlutterNativeImage.compressImage(
-      targetPath,
-      quality: 50,
-    );
+  // //compress Photo file and get file.
+  // Future<File> compressAndGetFile(
+  //     String targetPath, List<File> dataFotoDelete) async {
+  //   File photo = await FlutterNativeImage.compressImage(
+  //     targetPath,
+  //     quality: 50,
+  //   );
+  //
+  //   //Add List Photo For Delete Later
+  //   dataFotoDelete.add(File(targetPath));
+  //
+  //   //Return Photo
+  //   if (kDebugMode) {
+  //     print('Photo Size End Result : ${photo.lengthSync() / 1000}');
+  //     print('Photo Path : ${photo.path}');
+  //   }
+  //   return photo;
+  // }
 
-    //Add List Photo For Delete Later
-    dataFotoDelete.add(File(targetPath));
-
-    //Return Photo
-    if (kDebugMode) {
-      print('Photo Size End Result : ${photo.lengthSync() / 1000}');
-      print('Photo Path : ${photo.path}');
-    }
-    return photo;
-  }
-
-  //Check Compress Foto
-  Future<File> checkCompressPhoto(
-      File dataFoto, List<File> dataFotoDelete) async {
-    while (dataFoto.lengthSync() / 1000 > 1000) {
-      dataFoto = await compressAndGetFile(
-        dataFoto.path,
-        dataFotoDelete,
-      );
-    }
-    return dataFoto;
-  }
+  // //Check Compress Foto
+  // Future<File> checkCompressPhoto(
+  //     File dataFoto, List<File> dataFotoDelete) async {
+  //   while (dataFoto.lengthSync() / 1000 > 1000) {
+  //     dataFoto = await compressAndGetFile(
+  //       dataFoto.path,
+  //       dataFotoDelete,
+  //     );
+  //   }
+  //   return dataFoto;
+  // }
 
   // //Show Get File Modal Dialog
   // Future<List<dynamic>> showGetFileModal(BuildContext context, File file, List<File> fileDelete) async {

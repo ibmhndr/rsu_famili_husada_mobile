@@ -350,14 +350,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.2.0"
-  flutter_native_image:
-    dependency: "direct main"
-    description:
-      name: flutter_native_image
-      sha256: "0ff23d6222064259df8f85ea56925627ea1ec8658814672c5b6c23fc9174c65e"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.6+1"
   flutter_native_splash:
     dependency: "direct main"
     description:
@@ -863,13 +855,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.1"
-  pdf_render:
-    dependency: "direct main"
-    description:
-      path: "../shared_plugins/pdf_render"
-      relative: true
-    source: path
-    version: "1.4.0"
   pdfx:
     dependency: "direct main"
     description:
